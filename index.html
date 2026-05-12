@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Da Fome — Sabor de Verdade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍔</span>
+        <div class="logo-text">
+          <span class="logo-main">Casa Da Fome</span>
+          <span class="logo-sub">Comidas</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+      <a href="#contato" class="nav-cta">Pedir Agora</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Aberto agora · Entrega em 30 min
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">O Sabor</span>
+        <span class="title-line accent">que Vicia.</span>
+      </h1>
+      <p class="hero-desc">Hambúrgueres artesanais, coxinhas crocantes e pastéis quentinhos. Feito com amor, entregue com rapidez.</p>
+      <div class="hero-btns">
+        <a href="#cardapio" class="btn-red">Ver Cardápio</a>
+        <a href="#sobre" class="btn-outline">Nossa História</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>4.9★</strong><span>avaliação</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>+2mil</strong><span>clientes</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>30min</strong><span>entrega</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=85" alt="Lanches" class="hero-img">
+        <div class="hero-img-glow"></div>
+      </div>
+      <div class="floating-tag tag-1">🔥 Mais Pedido</div>
+      <div class="floating-tag tag-2">⚡ Pronto em 15min</div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Role para ver</span>
+      <div class="scroll-dots"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>🍔 Smash Burger</span><span class="sep">·</span>
+      <span>🍗 Coxinha</span><span class="sep">·</span>
+      <span>🥟 Pastel</span><span class="sep">·</span>
+      <span>🧃 Suco Natural</span><span class="sep">·</span>
+      <span>🍟 Batata Frita</span><span class="sep">·</span>
+      <span>🥤 Milkshake</span><span class="sep">·</span>
+      <span>🍔 Smash Burger</span><span class="sep">·</span>
+      <span>🍗 Coxinha</span><span class="sep">·</span>
+      <span>🥟 Pastel</span><span class="sep">·</span>
+      <span>🧃 Suco Natural</span><span class="sep">·</span>
+      <span>🍟 Batata Frita</span><span class="sep">·</span>
+      <span>🥤 Milkshake</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- CARDÁPIO -->
+  <section id="cardapio" class="cardapio">
+    <div class="section-intro">
+      <p class="section-label">— Nosso Cardápio</p>
+      <h2 class="section-title">Escolha o seu <em>favorito</em></h2>
+      <p class="section-sub">Tudo feito na hora, com ingredientes frescos e muito tempero.</p>
+    </div>
+    <div class="menu-tabs">
+      <button class="tab active" data-cat="todos">Todos</button>
+      <button class="tab" data-cat="burger">Burgers</button>
+      <button class="tab" data-cat="salgados">Salgados</button>
+      <button class="tab" data-cat="bebidas">Bebidas</button>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card" data-cat="burger">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Smash Clássico">
+          <div class="card-tag hot">🔥 Hit</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Smash Clássico</h3><span class="card-price">R$ 28</span></div>
+          <p>Blend de 180g, queijo cheddar, alface, tomate, maionese especial.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burger">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=500&q=80" alt="Double Smash">
+          <div class="card-tag">⚡ Novo</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Double Smash</h3><span class="card-price">R$ 38</span></div>
+          <p>Dois blends de 150g, bacon crocante, duplo cheddar, molho barbecue.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burger">
+        <div class="card-img-wrap">
+          <img src="lanche-crispy.png" alt="Frango Crispy">
+          <div class="card-tag">🍗 Crispy</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Frango Crispy</h3><span class="card-price">R$ 26</span></div>
+          <p>Filé de frango empanado, requeijão, alface americana, picles artesanal.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="salgados">
+        <div class="card-img-wrap">
+          <img src="coxinha.jpg" alt="Coxinha">
+          <div class="card-tag hot">🔥 Hit</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Coxinha</h3><span class="card-price">R$ 8</span></div>
+          <p>Recheio de frango com catupiry, massa crocante e dourada na fritura.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="salgados">
+        <div class="card-img-wrap">
+          <img src="pastel.jpg" alt="Pastel">
+          <div class="card-tag">🥟 Clássico</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Pastel</h3><span class="card-price">R$ 10</span></div>
+          <p>Massa fininha e crocante, recheio de carne moída temperada com azeitona.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="salgados">
+        <div class="card-img-wrap">
+          <img src="pastel-de-queijo.png" alt="Pastel de Queijo">
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Pastel de Queijo</h3><span class="card-price">R$ 9</span></div>
+          <p>Recheio generoso de mussarela, crocante por fora, derretendo por dentro.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="bebidas">
+        <div class="card-img-wrap">
+          <img src="milk-shake-saudavel-de-banana-e-morango-3-clikogug.jpg" alt="Milkshake">
+          <div class="card-tag">🥤 Gelado</div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Milkshake</h3><span class="card-price">R$ 18</span></div>
+          <p>Chocolate, morango ou baunilha. 500ml cremoso e gelado.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="bebidas">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=500&q=80" alt="Suco Natural">
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Suco Natural</h3><span class="card-price">R$ 12</span></div>
+          <p>Laranja, limão, maracujá ou manga. Feito na hora, sem conservantes.</p>
+          <button class="card-btn">Adicionar +</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="sobre-visual">
+      <div class="sobre-img-main">
+        <img src="lanchonete garagem.jpg" alt="Cozinha">
+      </div>
+      <div class="sobre-img-secondary">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Equipe">
+      </div>
+      <div class="sobre-anos">
+        <strong>+10</strong>
+        <span>anos de sabor</span>
+      </div>
+    </div>
+    <div class="sobre-content">
+      <p class="section-label">— Nossa História</p>
+      <h2 class="section-title">Começou numa <em>garagem</em>,<br>virou <em>paixão</em>.</h2>
+      <p class="sobre-text">Em 2014, Casa Da Fome nasceu numa garagem no centro de São Paulo. Uma chapa, um sonho e muita vontade de fazer o melhor lanche da cidade.</p>
+      <p class="sobre-text">Hoje atendemos mais de 2.000 clientes por mês, mas a receita e o capricho continuam os mesmos. Cada lanche é feito com atenção e ingredientes frescos.</p>
+      <div class="valores">
+        <div class="valor">
+          <span class="valor-icon">🥩</span>
+          <div><strong>Ingredientes frescos</strong><p>Compramos diariamente dos melhores fornecedores</p></div>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">⚡</span>
+          <div><strong>Entrega rápida</strong><p>Seu pedido em até 30 minutos na sua porta</p></div>
+        </div>
+        <div class="valor">
+          <span class="valor-icon">❤️</span>
+          <div><strong>Feito com amor</strong><p>Cada detalhe importa, da massa ao recheio</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <p class="section-label" style="text-align:center">— O que dizem</p>
+    <h2 class="section-title" style="text-align:center">Clientes que <em>amam</em></h2>
+    <div class="dep-grid">
+      <div class="dep-card">
+        <div class="dep-stars">★★★★★</div>
+        <p>"O melhor hambúrguer que já comi na vida. A carne é perfeita e o molho especial é viciante. Peço toda semana!"</p>
+        <div class="dep-author">
+          <div class="dep-avatar">M</div>
+          <div><strong>Marcos Silva</strong><span>São Paulo, SP</span></div>
+        </div>
+      </div>
+      <div class="dep-card dep-featured">
+        <div class="dep-stars">★★★★★</div>
+        <p>"A coxinha é incrível! Nunca pensei que ia amar tanto. Chegou quentinha e crocante, simplesmente perfeita."</p>
+        <div class="dep-author">
+          <div class="dep-avatar">A</div>
+          <div><strong>Ana Beatriz</strong><span>Santo André, SP</span></div>
+        </div>
+      </div>
+      <div class="dep-card">
+        <div class="dep-stars">★★★★★</div>
+        <p>"Entrega super rápida e o pastel chegou quentinho. O atendimento é excelente. Virou meu lanche favorito!"</p>
+        <div class="dep-author">
+          <div class="dep-avatar">R</div>
+          <div><strong>Rafael Costa</strong><span>Guarulhos, SP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="contato-left">
+      <p class="section-label">— Fale Conosco</p>
+      <h2 class="section-title">Bora pedir <em>agora?</em></h2>
+      <p class="contato-desc">Manda um WhatsApp, chama no Instagram ou vem nos visitar. Temos mesa para você!</p>
+      <div class="contato-items">
+        <a href="https://wa.me/5511999999999" class="contato-item" target="_blank">
+          <div class="ci-icon">📲</div>
+          <div><strong>WhatsApp</strong><span>(11) 99999-9999</span></div>
+          <span class="ci-arrow">→</span>
+        </a>
+        <div class="contato-item">
+          <div class="ci-icon">📍</div>
+          <div><strong>Endereço</strong><span>Rua dos Lanches, 42 — Centro, SP</span></div>
+          <span class="ci-arrow">→</span>
+        </div>
+        <div class="contato-item">
+          <div class="ci-icon">🕐</div>
+          <div><strong>Horário</strong><span>Seg–Dom: 11h às 23h</span></div>
+        </div>
+        <div class="contato-item">
+          <div class="ci-icon">📸</div>
+          <div><strong>Instagram</strong><span>@gordaolanches</span></div>
+          <span class="ci-arrow">→</span>
+        </div>
+      </div>
+    </div>
+    <div class="contato-right">
+      <div class="form-wrap">
+        <h3>Manda uma mensagem</h3>
+        <div class="form-group">
+          <label>Seu nome</label>
+          <input type="text" placeholder="Ex: João Silva">
+        </div>
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input type="tel" placeholder="(11) 99999-9999">
+        </div>
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea placeholder="Quero fazer um pedido..."></textarea>
+        </div>
+        <button class="form-btn">Enviar Mensagem 🚀</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>🍔</span>
+        <div>
+          <strong>Casa Da Fome</strong>
+          <span>Sabor de verdade desde 2014</span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Casa Da Fome · Feito com ❤️ e muita fome</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">iFood</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Cursor
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.transform = `translate(${e.clientX - 16}px, ${e.clientY - 16}px)`;
+    });
+    document.querySelectorAll('a, button, .menu-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+
+    // Header scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }));
+
+    // Tabs cardápio
+    const tabs = document.querySelectorAll('.tab');
+    const cards = document.querySelectorAll('.menu-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const cat = tab.dataset.cat;
+        cards.forEach(card => {
+          if (cat === 'todos' || card.dataset.cat === cat) {
+            card.style.display = '';
+            setTimeout(() => card.classList.add('visible'), 10);
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.menu-card, .dep-card, .valor, .contato-item, .sobre-content, .sobre-visual').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
